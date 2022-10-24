@@ -1,9 +1,9 @@
 <?php
 
-namespace Marius\Kilo\Windows\Windows;
+namespace Marius\Kilo\Windows;
 
-use Marius\Kilo\Windows\Colors\ColorInterface;
-use Marius\Kilo\Windows\Experts\WindowExpertInterface;
+use Marius\Kilo\Colors\ColorInterface;
+use Marius\Kilo\Experts\WindowExpertInterface;
 
 interface WindowInterface
 {

@@ -2,7 +2,7 @@
 
 require '../vendor/autoload.php';
 
-use Marius\Kilo\Windows\WindowManufacturer;
+use Marius\Kilo\WindowManufacturer;
 
 $windowManufacturer = new WindowManufacturer();
 $window = $windowManufacturer->manufactureWindow('plastic', 'red');

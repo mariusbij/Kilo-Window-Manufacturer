@@ -1,11 +1,11 @@
 <?php
 
-namespace Marius\Kilo\Windows;
+namespace Marius\Kilo;
 
-use Marius\Kilo\Windows\Colors\ColorFactory;
-use Marius\Kilo\Windows\Experts\WindowExpertInterface;
-use Marius\Kilo\Windows\Factories\WindowFactoryInterface;
-use Marius\Kilo\Windows\Windows\WindowInterface;
+use Marius\Kilo\Colors\ColorFactory;
+use Marius\Kilo\Experts\WindowExpertInterface;
+use Marius\Kilo\Factories\WindowFactoryInterface;
+use Marius\Kilo\Windows\WindowInterface;
 
 class WindowManufacturer
 {

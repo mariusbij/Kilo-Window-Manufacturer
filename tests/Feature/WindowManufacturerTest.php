@@ -2,7 +2,7 @@
 
 namespace Marius\Kilo\Tests\Feature;
 
-use Marius\Kilo\Windows\WindowManufacturer;
+use Marius\Kilo\WindowManufacturer;
 use PHPUnit\Framework\TestCase;
 
 class WindowManufacturerTest extends TestCase

@@ -1,15 +1,15 @@
 <?php
 
-namespace Marius\Kilo\Windows\Windows;
+namespace Marius\Kilo\Windows;
 
-use Marius\Kilo\Windows\Colors\ColorInterface;
-use Marius\Kilo\Windows\Experts\WindowExpertInterface;
+use Marius\Kilo\Colors\ColorInterface;
+use Marius\Kilo\Experts\WindowExpertInterface;
 
-class AluminumWindow implements WindowInterface
+class PlasticWindow implements WindowInterface
 {
-    const TYPE = 'aluminum';
+    const TYPE = 'plastic';
 
-    private string $description = 'aluminum window';
+    private string $description = 'plastic window';
 
     private WindowExpertInterface $expert;
 
@@ -39,4 +39,4 @@ class AluminumWindow implements WindowInterface
     {
         $this->expert = $expert;
     }
- }
+}

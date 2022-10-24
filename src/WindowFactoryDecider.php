@@ -1,12 +1,12 @@
 <?php
 
-namespace Marius\Kilo\Windows;
+namespace Marius\Kilo;
 
-use Marius\Kilo\Windows\Factories\AluminumWindowFactory;
-use Marius\Kilo\Windows\Factories\PlasticWindowFactory;
-use Marius\Kilo\Windows\Factories\WindowFactoryInterface;
-use Marius\Kilo\Windows\Windows\AluminumWindow;
-use Marius\Kilo\Windows\Windows\PlasticWindow;
+use Marius\Kilo\Factories\AluminumWindowFactory;
+use Marius\Kilo\Factories\PlasticWindowFactory;
+use Marius\Kilo\Factories\WindowFactoryInterface;
+use Marius\Kilo\Windows\AluminumWindow;
+use Marius\Kilo\Windows\PlasticWindow;
 
 class WindowFactoryDecider
 {

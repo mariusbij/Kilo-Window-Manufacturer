@@ -1,6 +1,6 @@
 <?php
 
-namespace Marius\Kilo\Windows\Experts;
+namespace Marius\Kilo\Experts;
 
 class AluminumWindowExpert implements WindowExpertInterface
 {

@@ -1,11 +1,11 @@
 <?php
 
-namespace Marius\Kilo\Windows\Factories;
+namespace Marius\Kilo\Factories;
 
-use Marius\Kilo\Windows\Windows\AluminumWindow;
-use Marius\Kilo\Windows\Windows\WindowInterface;
-use Marius\Kilo\Windows\Experts\AluminumWindowExpert;
-use Marius\Kilo\Windows\Experts\WindowExpertInterface;
+use Marius\Kilo\Windows\AluminumWindow;
+use Marius\Kilo\Windows\WindowInterface;
+use Marius\Kilo\Experts\AluminumWindowExpert;
+use Marius\Kilo\Experts\WindowExpertInterface;
 
 class AluminumWindowFactory implements WindowFactoryInterface
 {

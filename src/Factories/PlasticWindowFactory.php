@@ -1,11 +1,11 @@
 <?php
 
-namespace Marius\Kilo\Windows\Factories;
+namespace Marius\Kilo\Factories;
 
-use Marius\Kilo\Windows\Windows\PlasticWindow;
-use Marius\Kilo\Windows\Windows\WindowInterface;
-use Marius\Kilo\Windows\Experts\PlasticWindowExpert;
-use Marius\Kilo\Windows\Experts\WindowExpertInterface;
+use Marius\Kilo\Windows\PlasticWindow;
+use Marius\Kilo\Windows\WindowInterface;
+use Marius\Kilo\Experts\PlasticWindowExpert;
+use Marius\Kilo\Experts\WindowExpertInterface;
 
 class PlasticWindowFactory implements WindowFactoryInterface
 {
