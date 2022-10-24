@@ -6,4 +6,4 @@
 
 ## Tests
 
-`composer tests`
+`composer phpunit`
