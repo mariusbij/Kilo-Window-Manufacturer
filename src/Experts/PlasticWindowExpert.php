@@ -4,7 +4,7 @@ namespace Marius\KiloWindowManufacturer\Experts;
 
 class PlasticWindowExpert implements WindowExpertInterface
 {
-    private string $description = 'Plastic window expert';
+    private string $description = 'plastic window expert';
 
     public function getDescription(): string
     {
