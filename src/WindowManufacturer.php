@@ -3,9 +3,7 @@
 namespace Marius\KiloWindowManufacturer;
 
 use Marius\KiloWindowManufacturer\Colors\ColorFactory;
-use Marius\KiloWindowManufacturer\Experts\WindowExpertInterface;
 use Marius\KiloWindowManufacturer\Factories\WindowFactoryDecider;
-use Marius\KiloWindowManufacturer\Factories\WindowFactoryInterface;
 use Marius\KiloWindowManufacturer\Windows\WindowInterface;
 
 class WindowManufacturer
