@@ -4,8 +4,10 @@ namespace Marius\Kilo\Windows\Experts;
 
 class AluminumWindowExpert implements WindowExpertInterface
 {
+    private string $description = 'Aluminum window expert';
+
     public function getDescription(): string
     {
-        return 'Aluminum window expert';
+        return $this->description;
     }
 }
