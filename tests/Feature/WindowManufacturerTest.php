@@ -7,7 +7,7 @@ use PHPUnit\Framework\TestCase;
 
 class WindowManufacturerTest extends TestCase
 {
-    public function test_window_aluminum_red(): void
+    public function testWindowAluminumRed(): void
     {
         $windowManufacturer = new WindowManufacturer();
         $window = $windowManufacturer->manufactureWindow('aluminum', 'red');
@@ -17,7 +17,7 @@ class WindowManufacturerTest extends TestCase
         $this->assertEquals('red', $window->getColor()->getDescription());
     }
 
-    public function test_window_plastic_blue(): void
+    public function testWindowPlasticBlue(): void
     {
         $windowManufacturer = new WindowManufacturer();
         $window = $windowManufacturer->manufactureWindow('plastic', 'blue');
@@ -27,7 +27,7 @@ class WindowManufacturerTest extends TestCase
         $this->assertEquals('blue', $window->getColor()->getDescription());
     }
 
-    public function test_window_aluminum_brown(): void
+    public function testWindowAluminumBrown(): void
     {
         $windowManufacturer = new WindowManufacturer();
         $window = $windowManufacturer->manufactureWindow('aluminum', 'brown');

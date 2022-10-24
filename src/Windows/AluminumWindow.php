@@ -7,7 +7,7 @@ use Marius\KiloWindowManufacturer\Experts\WindowExpertInterface;
 
 class AluminumWindow implements WindowInterface
 {
-    const TYPE = 'aluminum';
+    public const TYPE = 'aluminum';
 
     private string $description = 'aluminum window';
 
@@ -39,4 +39,4 @@ class AluminumWindow implements WindowInterface
     {
         $this->expert = $expert;
     }
- }
+}

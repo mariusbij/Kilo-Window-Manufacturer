@@ -4,7 +4,7 @@ namespace Marius\KiloWindowManufacturer\Colors;
 
 class Red implements ColorInterface
 {
-    const NAME = 'red';
+    public const NAME = 'red';
 
     public function getDescription(): string
     {

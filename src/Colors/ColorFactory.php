@@ -7,7 +7,8 @@ class ColorFactory
     /**
      * @throws \Exception
      */
-    public function processColor(string $color): ColorInterface {
+    public function processColor(string $color): ColorInterface
+    {
 
         return match ($color) {
             Blue::NAME => new Blue(),

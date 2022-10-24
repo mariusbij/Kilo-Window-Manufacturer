@@ -7,7 +7,7 @@ use Marius\KiloWindowManufacturer\Experts\WindowExpertInterface;
 
 class PlasticWindow implements WindowInterface
 {
-    const TYPE = 'plastic';
+    public const TYPE = 'plastic';
 
     private string $description = 'plastic window';
 

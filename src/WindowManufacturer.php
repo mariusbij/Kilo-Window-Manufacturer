@@ -11,7 +11,6 @@ class WindowManufacturer
     public function manufactureWindow(string $windowType, string $windowColor): WindowInterface
     {
         try {
-
             $windowFactoryDecider = new WindowFactoryDecider();
             $windowFactory = $windowFactoryDecider->getAppropriateFactory($windowType);
 
@@ -19,7 +18,6 @@ class WindowManufacturer
             $window->setExpert($windowFactory->makeWindowExpert());
 
             $this->paintWindow($window, $windowColor);
-
         } catch (\Exception $e) {
             print_r($e->getMessage());
             exit();
