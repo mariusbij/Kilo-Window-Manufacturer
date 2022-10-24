@@ -32,7 +32,7 @@ class WindowManufacturer
     {
         $windowFactoryDecider = new WindowFactoryDecider();
 
-        return $windowFactoryDecider->getFactory($windowType);
+        return $windowFactoryDecider->getAppropriateFactory($windowType);
     }
 
     private function assignWindowExpert(WindowInterface $window, WindowExpertInterface $expert): void
@@ -46,7 +46,7 @@ class WindowManufacturer
     private function paintWindow(WindowInterface $window, string $windowColor): void
     {
         $colorFactory = new ColorFactory();
-        $color = $colorFactory->createColor($windowColor);
+        $color = $colorFactory->processColor($windowColor);
         $window->setColor($color);
     }
 }

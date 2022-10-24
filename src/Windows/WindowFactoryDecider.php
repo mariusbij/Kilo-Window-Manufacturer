@@ -13,7 +13,7 @@ class WindowFactoryDecider
     /**
      * @throws \Exception
      */
-    public function getFactory(string $type): WindowFactoryInterface {
+    public function getAppropriateFactory(string $type): WindowFactoryInterface {
 
         return match ($type) {
             AluminumWindow::TYPE => new AluminumWindowFactory(),
