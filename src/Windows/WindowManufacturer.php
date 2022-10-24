@@ -13,19 +13,15 @@ class WindowManufacturer
     {
         try {
             $windowFactory = $this->getAppropriateWindowFactory($windowType);
-
             $window = $windowFactory->makeWindow();
 
             $this->assignWindowExpert($window, $windowFactory->makeWindowExpert());
-
             $this->paintWindow($window, $windowColor);
 
         } catch (\Exception $e) {
-
             print_r($e->getMessage());
             exit();
         }
-
         return $window;
     }
 
