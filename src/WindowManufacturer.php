@@ -13,10 +13,13 @@ class WindowManufacturer
     public function manufactureWindow(string $windowType, string $windowColor): WindowInterface
     {
         try {
-            $windowFactory = $this->getAppropriateWindowFactory($windowType);
-            $window = $windowFactory->makeWindow();
 
-            $this->assignWindowExpert($window, $windowFactory->makeWindowExpert());
+            $windowFactoryDecider = new WindowFactoryDecider();
+            $windowFactory = $windowFactoryDecider->getAppropriateFactory($windowType);
+
+            $window = $windowFactory->makeWindow();
+            $window->setExpert($windowFactory->makeWindowExpert());
+
             $this->paintWindow($window, $windowColor);
 
         } catch (\Exception $e) {
@@ -24,21 +27,6 @@ class WindowManufacturer
             exit();
         }
         return $window;
-    }
-
-    /**
-     * @throws \Exception
-     */
-    private function getAppropriateWindowFactory(string $windowType): WindowFactoryInterface
-    {
-        $windowFactoryDecider = new WindowFactoryDecider();
-
-        return $windowFactoryDecider->getAppropriateFactory($windowType);
-    }
-
-    private function assignWindowExpert(WindowInterface $window, WindowExpertInterface $expert): void
-    {
-        $window->setExpert($expert);
     }
 
     /**
