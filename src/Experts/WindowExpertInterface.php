@@ -1,6 +1,6 @@
 <?php
 
-namespace Marius\Kilo\Experts;
+namespace Marius\KiloWindowManufacturer\Experts;
 
 interface WindowExpertInterface
 {

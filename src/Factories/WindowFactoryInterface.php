@@ -1,9 +1,9 @@
 <?php
 
-namespace Marius\Kilo\Factories;
+namespace Marius\KiloWindowManufacturer\Factories;
 
-use Marius\Kilo\Experts\WindowExpertInterface;
-use Marius\Kilo\Windows\WindowInterface;
+use Marius\KiloWindowManufacturer\Experts\WindowExpertInterface;
+use Marius\KiloWindowManufacturer\Windows\WindowInterface;
 
 interface WindowFactoryInterface
 {

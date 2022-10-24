@@ -1,9 +1,9 @@
 <?php
 
-namespace Marius\Kilo\Windows;
+namespace Marius\KiloWindowManufacturer\Windows;
 
-use Marius\Kilo\Colors\ColorInterface;
-use Marius\Kilo\Experts\WindowExpertInterface;
+use Marius\KiloWindowManufacturer\Colors\ColorInterface;
+use Marius\KiloWindowManufacturer\Experts\WindowExpertInterface;
 
 class AluminumWindow implements WindowInterface
 {

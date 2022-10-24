@@ -1,8 +1,8 @@
 <?php
 
-namespace Marius\Kilo\Tests\Feature;
+namespace Marius\KiloWindowManufacturer\Tests\Feature;
 
-use Marius\Kilo\WindowManufacturer;
+use Marius\KiloWindowManufacturer\WindowManufacturer;
 use PHPUnit\Framework\TestCase;
 
 class WindowManufacturerTest extends TestCase

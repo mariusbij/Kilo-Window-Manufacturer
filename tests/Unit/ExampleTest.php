@@ -1,6 +1,6 @@
 <?php
 
-namespace Marius\Kilo\Tests\Unit;
+namespace Marius\KiloWindowManufacturer\Tests\Unit;
 
 use PHPUnit\Framework\TestCase;
 

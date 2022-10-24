@@ -1,6 +1,6 @@
 <?php
 
-namespace Marius\Kilo\Colors;
+namespace Marius\KiloWindowManufacturer\Colors;
 
 class ColorFactory
 {
