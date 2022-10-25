@@ -1,4 +1,4 @@
-# Kilo-Window-Manufacturer
+# kilo-window-manufacturer
 
 ## Installation
 
