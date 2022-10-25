@@ -9,11 +9,11 @@ interface WindowInterface
 {
     public function getDescription(): string;
 
-    public function getColor(): ColorInterface;
+    public function getColorDescription(): string;
+
+    public function getExpertDescription(): string;
 
     public function setColor(ColorInterface $color): void;
-
-    public function getExpert(): WindowExpertInterface;
 
     public function setExpert(WindowExpertInterface $expert): void;
 }

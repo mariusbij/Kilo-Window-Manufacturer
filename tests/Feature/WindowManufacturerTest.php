@@ -12,9 +12,9 @@ class WindowManufacturerTest extends TestCase
         $windowManufacturer = new WindowManufacturer();
         $window = $windowManufacturer->manufactureWindow('aluminum', 'red');
 
-        $this->assertEquals('aluminum window', $window->getDescription());
-        $this->assertEquals('aluminum window expert', $window->getExpert()->getDescription());
-        $this->assertEquals('red', $window->getColor()->getDescription());
+        $this->assertEquals('This is a aluminum window', $window->getDescription());
+        $this->assertEquals('I was installed by aluminum window expert', $window->getExpertDescription());
+        $this->assertEquals('I am red', $window->getColorDescription());
     }
 
     public function testWindowPlasticBlue(): void
@@ -22,9 +22,9 @@ class WindowManufacturerTest extends TestCase
         $windowManufacturer = new WindowManufacturer();
         $window = $windowManufacturer->manufactureWindow('plastic', 'blue');
 
-        $this->assertEquals('plastic window', $window->getDescription());
-        $this->assertEquals('plastic window expert', $window->getExpert()->getDescription());
-        $this->assertEquals('blue', $window->getColor()->getDescription());
+        $this->assertEquals('This is a plastic window', $window->getDescription());
+        $this->assertEquals('I was installed by plastic window expert', $window->getExpertDescription());
+        $this->assertEquals('I am blue', $window->getColorDescription());
     }
 
     public function testWindowAluminumBrown(): void
@@ -32,8 +32,8 @@ class WindowManufacturerTest extends TestCase
         $windowManufacturer = new WindowManufacturer();
         $window = $windowManufacturer->manufactureWindow('aluminum', 'brown');
 
-        $this->assertEquals('aluminum window', $window->getDescription());
-        $this->assertEquals('aluminum window expert', $window->getExpert()->getDescription());
-        $this->assertEquals('brown', $window->getColor()->getDescription());
+        $this->assertEquals('This is a aluminum window', $window->getDescription());
+        $this->assertEquals('I was installed by aluminum window expert', $window->getExpertDescription());
+        $this->assertEquals('I am brown', $window->getColorDescription());
     }
 }
