@@ -9,11 +9,16 @@ class AluminumWindow implements WindowInterface
 {
     public const TYPE = 'aluminum';
 
-    private string $description = 'aluminum window';
+    private string $description;
 
     private WindowExpertInterface $expert;
 
     private ColorInterface $color;
+
+    public function __construct()
+    {
+        $this->description = sprintf('%s window', self::TYPE);
+    }
 
     public function getDescription(): string
     {

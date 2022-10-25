@@ -9,11 +9,16 @@ class PlasticWindow implements WindowInterface
 {
     public const TYPE = 'plastic';
 
-    private string $description = 'plastic window';
+    private string $description;
 
     private WindowExpertInterface $expert;
 
     private ColorInterface $color;
+
+    public function __construct()
+    {
+        $this->description = sprintf('%s window', self::TYPE);
+    }
 
     public function getDescription(): string
     {
