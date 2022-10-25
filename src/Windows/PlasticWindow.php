@@ -2,7 +2,7 @@
 
 namespace Marius\KiloWindowManufacturer\Windows;
 
-use Marius\KiloWindowManufacturer\Colors\ColorInterface;
+use Marius\KiloWindowManufacturer\Painters\Colors\ColorInterface;
 use Marius\KiloWindowManufacturer\Experts\WindowExpertInterface;
 
 class PlasticWindow implements WindowInterface

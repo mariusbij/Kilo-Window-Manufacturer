@@ -2,8 +2,8 @@
 
 namespace Marius\KiloWindowManufacturer;
 
-use Marius\KiloWindowManufacturer\Colors\ColorFactory;
 use Marius\KiloWindowManufacturer\Factories\WindowFactoryDecider;
+use Marius\KiloWindowManufacturer\Painters\Painter;
 use Marius\KiloWindowManufacturer\Windows\WindowInterface;
 
 class WindowManufacturer
@@ -17,21 +17,12 @@ class WindowManufacturer
             $window = $windowFactory->makeWindow();
             $window->setExpert($windowFactory->makeWindowExpert());
 
-            $this->paintWindow($window, $windowColor);
+            $painter = new Painter();
+            $painter->paintWindow($window, $windowColor);
         } catch (\Exception $e) {
             print_r($e->getMessage());
             exit();
         }
         return $window;
-    }
-
-    /**
-     * @throws \Exception
-     */
-    private function paintWindow(WindowInterface $window, string $windowColor): void
-    {
-        $colorFactory = new ColorFactory();
-        $color = $colorFactory->processColor($windowColor);
-        $window->setColor($color);
     }
 }

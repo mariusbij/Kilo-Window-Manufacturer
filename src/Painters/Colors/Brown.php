@@ -1,6 +1,6 @@
 <?php
 
-namespace Marius\KiloWindowManufacturer\Colors;
+namespace Marius\KiloWindowManufacturer\Painters\Colors;
 
 class Brown implements ColorInterface
 {

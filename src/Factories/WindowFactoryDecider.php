@@ -12,7 +12,6 @@ class WindowFactoryDecider
      */
     public function getAppropriateFactory(string $type): WindowFactoryInterface
     {
-
         return match ($type) {
             AluminumWindow::TYPE => new AluminumWindowFactory(),
             PlasticWindow::TYPE => new PlasticWindowFactory(),
