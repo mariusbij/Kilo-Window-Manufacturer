@@ -2,12 +2,12 @@
 
 namespace Marius\KiloWindowManufacturer\Colors;
 
-class Blue implements ColorInterface
+class Blue extends Color implements ColorInterface
 {
     public const NAME = 'blue';
 
-    public function getDescription(): string
+    public function __construct()
     {
-        return self::NAME;
+        $this->setDescription(self::NAME);
     }
 }
