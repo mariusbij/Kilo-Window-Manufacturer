@@ -3,7 +3,7 @@
 namespace Marius\KiloWindowManufacturer\Windows;
 
 use Marius\KiloWindowManufacturer\Experts\WindowExpertInterface;
-use Marius\KiloWindowManufacturer\Painters\Colors\ColorInterface;
+use Marius\KiloWindowManufacturer\Colors\ColorInterface;
 
 abstract class Window implements WindowInterface
 {

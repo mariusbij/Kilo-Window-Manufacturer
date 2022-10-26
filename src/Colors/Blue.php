@@ -1,6 +1,6 @@
 <?php
 
-namespace Marius\KiloWindowManufacturer\Painters\Colors;
+namespace Marius\KiloWindowManufacturer\Colors;
 
 class Blue implements ColorInterface
 {
